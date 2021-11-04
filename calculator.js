@@ -1,22 +1,16 @@
-class calculator {
-    constructor(num1, num2) {
-        this.num1 = num1;
-        this.num2 = num2;
-    }
-    add() {
-        return this.num1 + this.num2;
-    }
-    substract() {
-        return this.num1 - this.num2;
-    };
-    divide() {
-        return this.num1 / this.num2;
-    };
-    multiply() {
-        return this.num1 * this.num2;
-    };
+const mathOperations = {
+    sum: function(a,b) {
+        return a + b;
+    },
     
-}
-
-const calculate = new calculator(2, 3);
-console.log(calculate.add());
+    substract: function(a,b) {
+        return a - b;
+    },
+    multiply: function(a,b) {
+        return a * b
+    },
+    divide: function(a,b) {
+        return a / b
+    }
+ }
+   module.exports = mathOperations
